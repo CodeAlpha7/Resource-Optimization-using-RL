@@ -1,0 +1,100 @@
+{
+    "ac_kwargs":	{
+        "activation":	"relu",
+        "hidden_sizes":	[
+            128,
+            128
+        ],
+        "output_activation":	"sigmoid"
+    },
+    "act_noise":	0.1,
+    "actor_critic":	"mlp_actor_critic",
+    "batch_size":	1000,
+    "env":	{
+        "<ResourceEnv instance>":	{
+            "Rmax":	100,
+            "UENum":	5,
+            "accu_reward":	"[0. 0. 0. 0. 0.]",
+            "action_dim":	5,
+            "action_max":	"[1. 1. 1. 1. 1.]",
+            "action_min":	"[0. 0. 0. 0. 0.]",
+            "action_space":	{
+                "Box(5,)":	{
+                    "bounded_above":	"[ True  True  True  True  True]",
+                    "bounded_below":	"[ True  True  True  True  True]",
+                    "dtype":	"float32",
+                    "high":	"[1. 1. 1. 1. 1.]",
+                    "low":	"[0. 0. 0. 0. 0.]",
+                    "np_random":	"RandomState(MT19937)",
+                    "shape":	[
+                        5
+                    ]
+                }
+            },
+            "alpha":	"[[0.31885935 0.22326116 0.13928853 0.49202072 0.10270387]]",
+            "aug_penalty":	"[10.0082018]",
+            "iter":	0,
+            "maxTime":	180,
+            "min_Reward":	"[360. 360. 360. 360. 360.]",
+            "num_res":	1,
+            "observation_space":	{
+                "Box(6,)":	{
+                    "bounded_above":	"[ True  True  True  True  True  True]",
+                    "bounded_below":	"[ True  True  True  True  True  True]",
+                    "dtype":	"float32",
+                    "high":	"[1. 1. 1. 1. 1. 1.]",
+                    "low":	"[0. 0. 0. 0. 0. 0.]",
+                    "np_random":	"RandomState(MT19937)",
+                    "shape":	[
+                        6
+                    ]
+                }
+            },
+            "observe_dim":	6,
+            "remain_reward":	"[360. 360. 360. 360. 360.]",
+            "rho":	10,
+            "state_max":	"[1. 1. 1. 1. 1. 1.]",
+            "state_min":	"[0. 0. 0. 0. 0. 0.]",
+            "test_env":	false,
+            "weight":	"[0.24598093 0.13570847 0.37965239 0.53463441 0.29982103]"
+        }
+    },
+    "epochs":	200,
+    "exp_name":	"1slice_exp2",
+    "fresh_learn_idx":	true,
+    "gamma":	0.99,
+    "logger":	{
+        "<spinup.utils.logx.EpochLogger object at 0x7f8b49fbca90>":	{
+            "epoch_dict":	{},
+            "exp_name":	"1slice_exp2",
+            "first_row":	true,
+            "log_current_row":	{},
+            "log_headers":	[],
+            "output_dir":	"1slice2",
+            "output_file":	{
+                "<_io.TextIOWrapper name='1slice2/progress.txt' mode='w' encoding='US-ASCII'>":	{
+                    "mode":	"w"
+                }
+            }
+        }
+    },
+    "logger_kwargs":	{
+        "exp_name":	"1slice_exp2",
+        "output_dir":	"1slice2"
+    },
+    "max_ep_len":	180,
+    "noise_clip":	0.5,
+    "num_test_episodes":	10,
+    "pi_lr":	0.001,
+    "policy_delay":	2,
+    "polyak":	0.995,
+    "q_lr":	0.001,
+    "replay_size":	1000000,
+    "save_freq":	1,
+    "seed":	12345679,
+    "start_steps":	100000,
+    "steps_per_epoch":	5000,
+    "target_noise":	0.2,
+    "update_after":	1000,
+    "update_every":	50
+}
