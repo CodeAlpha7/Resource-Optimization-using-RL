@@ -1,2 +1,2 @@
-# DeepSlicing
-Source Codes for: DeepSlicing: Deep Reinforcement Learning Assisted Resource Allocation for Network Slicing
+# RARE: Resource Allocation using RL Ensemble for 5G Network Slicing
+Source Codes to perform Resource Optimization for Network Slicing in 5G
